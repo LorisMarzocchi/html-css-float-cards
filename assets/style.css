@@ -1,4 +1,4 @@
-*{
+*, *::after, *::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,11 +31,11 @@ p {
 }
 main {
     margin: auto;
-}
+} 
 header {
     margin: auto;
  
-}
+} 
 .container {
     
     box-shadow: 5px 5px rgba(211, 211, 211, 0.5);
@@ -43,40 +43,30 @@ header {
     background-color: black;
     margin-bottom: 35px;
     margin-right: 15px;
-    height: 100px;
+    height: 100%;
     width: calc(100% / 3 - 20px);
     vertical-align: middle;
-    overflow: auto;
-    /* overflow non è esattamente il top per l'estetica */
-    /* content: " ";
-    clear: both; */
-}
-
-
-.container::after {
-
-    content: " ";
-    display: block;
-	clear: inherit;
-
+    /* overflow: auto; */
+    /* overflow non è esattamente il top per l'estetica*/
+    content: "";
+    clear: both;
+   
+   
 }
 
 .imgcard {
+    
     height: 100px;
     width: 100px;
     float: left;
-    margin-right: 15px;
+    margin-right: 10px;
     vertical-align: middle;
-    
 }
-.float-rigt{
-
-    height: 100px;
-    width: 100px;
-    float: right;
-    vertical-align: middle;
-
-}
+.float-right{
+    float: left;
+    vertical-align: middle;  
+} 
+ 
 
 .nome {
     padding: 7px;
@@ -84,6 +74,7 @@ header {
     
 }
 a {
+    margin-left: 7px;
     color: lightblue;
     text-decoration: none;
 
